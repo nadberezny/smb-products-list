@@ -26,4 +26,8 @@ public class Product {
 
     @ColumnInfo(name = COLUMN_IS_PURCHASED)
     public Boolean isPurchased;
+
+    public Product(String name) {
+        this.name = name;
+    }
 }

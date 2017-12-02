@@ -13,7 +13,7 @@ public interface ProductDao {
     @Query("SELECT COUNT(*) FROM " + Product.TABLE_NAME)
     int count();
 
-    @Query("SELECT * FROM " + Product.TABLE_NAME )
+    @Query("SELECT id _id, * FROM " + Product.TABLE_NAME )
     Cursor selectAll();
 
     @Query("SELECT * FROM " + Product.TABLE_NAME )
